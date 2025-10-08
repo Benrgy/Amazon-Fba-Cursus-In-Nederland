@@ -1,6 +1,5 @@
 export default function Footer() {
-  return (
-    <footer className="bg-adspension-dark text-white py-12">
+  return <footer className="bg-adspension-dark text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -21,24 +20,9 @@ export default function Footer() {
             </ul>
           </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Support</h4>
-            <ul className="space-y-2 text-gray-300">
-              <li>Veelgestelde Vragen</li>
-              <li>Contact</li>
-              <li>WhatsApp Support</li>
-              <li>Email Support</li>
-            </ul>
-          </div>
           
-          <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <div className="space-y-2 text-gray-300">
-              <p>📧 info@adspension.nl</p>
-              <p>📱 WhatsApp Support</p>
-              <p>🇳🇱 Nederland & België</p>
-            </div>
-          </div>
+          
+          
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
@@ -52,6 +36,5 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
