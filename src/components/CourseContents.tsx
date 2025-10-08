@@ -1,5 +1,5 @@
 import { Play, BookOpen, Gift } from "lucide-react";
-import courseMockup from "@/assets/course-mockup.jpg";
+import courseMockup from "@/assets/course-mockup.webp";
 
 export default function CourseContents() {
   const courseItems = [
@@ -51,8 +51,10 @@ export default function CourseContents() {
               <div className="flex-1">
                 <img 
                   src={courseMockup} 
-                  alt={`${item.title} - Cursus inhoud van de Amazon FBA Cursus`}
+                  alt={`${item.title} - Amazon FBA cursus in Nederland`}
                   className="w-full rounded-lg shadow-lg"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               

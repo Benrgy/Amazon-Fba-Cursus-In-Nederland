@@ -10,13 +10,13 @@ export interface SEOConfig {
 
 export const seoConfigs: Record<string, SEOConfig> = {
   '/': {
-    title: 'Adspension - #1 Amazon FBA Cursus Nederland | Leer Amazon FBA',
-    description: 'Start je Amazon FBA business met onze #1 cursus voor Nederland en België. 40+ video\'s, eBook, BOL.com training en 1-op-1 begeleiding. Begin vandaag!',
-    keywords: 'Amazon FBA, cursus, Nederland, BOL.com, e-commerce, online verkopen, Tijn Strikker, Amazon FBA Nederland, FBA cursus, Amazon seller',
-    ogTitle: 'Adspension - #1 Amazon FBA Cursus Nederland',
-    ogDescription: 'Start je Amazon FBA business met onze #1 cursus voor Nederland en België. 40+ video\'s, eBook, BOL.com training en 1-op-1 begeleiding.',
-    twitterTitle: 'Adspension - #1 Amazon FBA Cursus Nederland',
-    twitterDescription: 'Start je Amazon FBA business met onze cursus. 40+ video\'s, eBook, BOL.com training en 1-op-1 begeleiding.'
+    title: 'Amazon FBA Cursus in Nederland | Adspension',
+    description: 'Amazon FBA cursus in Nederland voor beginners. 40+ video\'s, eBook, BOL.com training en 1-op-1 begeleiding.',
+    keywords: 'Amazon FBA cursus in Nederland, Amazon training NL, FBA cursus, e-commerce cursus, BOL.com training, Amazon seller Nederland',
+    ogTitle: 'Amazon FBA Cursus in Nederland | Adspension',
+    ogDescription: 'Start je Amazon FBA business met onze cursus voor Nederland en België. 40+ video\'s, eBook en persoonlijke begeleiding.',
+    twitterTitle: 'Amazon FBA Cursus in Nederland | Adspension',
+    twitterDescription: 'Amazon FBA cursus in Nederland voor beginners. 40+ video\'s, eBook en 1-op-1 begeleiding.'
   },
   '/contact': {
     title: 'Contact Adspension - Amazon FBA Cursus Vragen | Tijn Strikker',

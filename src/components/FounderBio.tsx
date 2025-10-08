@@ -1,4 +1,4 @@
-import tijnImg from "@/assets/tijn-strikker.jpg";
+import tijnImg from "@/assets/tijn-strikker.webp";
 
 export default function FounderBio() {
   return (
@@ -12,8 +12,10 @@ export default function FounderBio() {
           <div className="order-2 md:order-1">
             <img 
               src={tijnImg} 
-              alt="Tijn Strikker - Amazon FBA Expert en Cursus Creator"
+              alt="Tijn Strikker - Amazon FBA cursus expert in Nederland"
               className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           

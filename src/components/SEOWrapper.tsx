@@ -22,6 +22,11 @@ export const SEOWrapper = ({ children }: { children: React.ReactNode }) => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={`https://adspension.nl${location.pathname}`} />
         
+        <meta name="geo.region" content="NL" />
+        <meta name="geo.placename" content="Nederland" />
+        <meta httpEquiv="content-language" content="nl-NL" />
+        <meta name="language" content="Dutch" />
+        
         <meta property="og:title" content={seoConfig.ogTitle} />
         <meta property="og:description" content={seoConfig.ogDescription} />
         <meta property="og:url" content={`https://adspension.nl${location.pathname}`} />
@@ -38,7 +43,7 @@ export const SEOWrapper = ({ children }: { children: React.ReactNode }) => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Course",
-            "name": "Amazon FBA Cursus Nederland",
+            "name": "Amazon FBA Cursus in Nederland | Adspension",
             "description": "Complete Amazon FBA cursus voor Nederland en België met 40+ video's, eBook en persoonlijke begeleiding.",
             "provider": {
               "@type": "Organization",
@@ -51,10 +56,20 @@ export const SEOWrapper = ({ children }: { children: React.ReactNode }) => {
               "jobTitle": "Amazon FBA Expert"
             },
             "courseMode": "online",
-            "inLanguage": "nl",
+            "inLanguage": "nl-NL",
+            "areaServed": "NL",
+            "spatialCoverage": "Netherlands",
             "offers": {
               "@type": "Offer",
-              "category": "Online Course"
+              "category": "Online Course",
+              "price": "497.00",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://adspension.nl"
+            },
+            "audience": {
+              "@type": "Audience",
+              "audienceType": "Beginners en ondernemers in Nederland"
             }
           })}
         </script>

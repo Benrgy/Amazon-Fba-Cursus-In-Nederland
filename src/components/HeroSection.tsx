@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImg from "@/assets/hero-bg.jpg";
+import heroImg from "@/assets/hero-bg.webp";
 
 export default function HeroSection() {
   return (
@@ -12,7 +12,7 @@ export default function HeroSection() {
       
       <div className="relative z-10 max-w-4xl mx-auto px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Wil jij ook een succesvol bedrijf starten op Amazon?
+          Amazon FBA Cursus in Nederland – Start jouw succesvolle Amazon-bedrijf
         </h1>
         
         <p className="text-xl md:text-2xl mb-4 text-gray-200">

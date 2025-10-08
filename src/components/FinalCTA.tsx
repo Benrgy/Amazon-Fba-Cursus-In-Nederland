@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
-import courseMockup from "@/assets/course-mockup.jpg";
+import courseMockup from "@/assets/course-mockup.webp";
 
 export default function FinalCTA() {
   const includes = [
@@ -21,8 +21,10 @@ export default function FinalCTA() {
           <div>
             <img 
               src={courseMockup} 
-              alt="Complete Amazon FBA Cursus bundel met video's, eBook en bonus materiaal"
+              alt="Complete Amazon FBA cursus in Nederland: bundel met video's, eBook en bonus materiaal"
               className="w-full rounded-lg shadow-xl"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           
