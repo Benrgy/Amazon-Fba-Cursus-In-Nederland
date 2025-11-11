@@ -58,6 +58,21 @@ All colors MUST be HSL.
     --adspension-orange: 18 100% 52%;
     --adspension-green: 145 63% 49%;
     --adspension-dark: 222 47% 11%;
+    --adspension-light: 210 40% 98%;
+    --adspension-yellow: 43 96% 56%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--adspension-orange)), hsl(18 100% 62%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--adspension-green)), hsl(145 63% 59%));
+    --gradient-dark: linear-gradient(135deg, hsl(var(--adspension-dark)), hsl(222 47% 21%));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(var(--adspension-orange) / 0.3);
+    --shadow-strong: 0 20px 60px -15px hsl(var(--adspension-dark) / 0.4);
+    --shadow-glow: 0 0 30px hsl(var(--adspension-orange) / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {

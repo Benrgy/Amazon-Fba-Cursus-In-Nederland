@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import courseMockup from "@/assets/course-mockup.webp";
+import UrgencyTimer from "./UrgencyTimer";
 
 export default function FinalCTA() {
   const includes = [
@@ -29,14 +30,20 @@ export default function FinalCTA() {
           </div>
           
           <div className="space-y-6">
+            <div className="inline-block bg-adspension-orange text-white px-4 py-2 rounded-full text-sm font-bold">
+              🏆 Meest Complete Amazon FBA Cursus van Nederland
+            </div>
+            
             <h3 className="text-3xl md:text-4xl font-bold text-adspension-dark">
-              #1 Amazon Cursus van NL
+              Start Vandaag Nog Met Je Amazon Business
             </h3>
             
             <p className="text-xl text-gray-700">
-              Start vandaag nog met je Amazon FBA business en bereik financiële vrijheid. 
-              Alles wat je nodig hebt in één complete cursus.
+              Alles wat je nodig hebt om succesvol te worden met Amazon FBA in Nederland. 
+              Van absolute beginner tot winstgevende ondernemer.
             </p>
+            
+            <UrgencyTimer />
             
             <ul className="space-y-3">
               {includes.map((item, index) => (
@@ -47,23 +54,37 @@ export default function FinalCTA() {
               ))}
             </ul>
             
-            <div className="pt-4">
+            <div className="pt-4 bg-gradient-to-r from-adspension-light to-white p-6 rounded-lg border-2 border-adspension-orange/20">
               <div className="mb-4">
-                <span className="text-3xl font-bold text-adspension-dark">€497</span>
-                <span className="text-gray-500 ml-2">eenmalig</span>
+                <div className="flex items-baseline gap-3">
+                  <span className="text-sm text-gray-500 line-through">€997</span>
+                  <span className="text-4xl font-bold text-adspension-orange">€497</span>
+                  <span className="text-sm bg-adspension-green text-white px-3 py-1 rounded-full font-bold">
+                    50% KORTING
+                  </span>
+                </div>
+                <span className="text-gray-600 text-sm">Eenmalige investering • Geen abonnementen</span>
               </div>
               
               <Button 
                 variant="hero" 
                 size="xl"
-                className="w-full md:w-auto"
+                className="w-full md:w-auto animate-pulse-glow"
               >
-                PLAN JOUW GRATIS CALL IN!
+                🚀 PLAN JOUW GRATIS CALL IN!
               </Button>
               
-              <p className="text-sm text-gray-500 mt-2">
-                🔒 30-dagen geld-terug-garantie • Levenslange toegang
-              </p>
+              <div className="mt-4 space-y-2">
+                <p className="text-sm text-gray-600 flex items-center gap-2">
+                  🔒 <span className="font-semibold">30-dagen geld-terug-garantie</span> • Zonder gedoe
+                </p>
+                <p className="text-sm text-gray-600 flex items-center gap-2">
+                  ⚡ <span className="font-semibold">Direct toegang</span> na aanmelding
+                </p>
+                <p className="text-sm text-gray-600 flex items-center gap-2">
+                  ♾️ <span className="font-semibold">Levenslange toegang</span> + alle updates
+                </p>
+              </div>
             </div>
           </div>
         </div>
