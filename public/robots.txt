@@ -39,4 +39,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://adspension.nl/sitemap.xml
+Sitemap: https://amazonfbacursusnederland.online/sitemap.xml

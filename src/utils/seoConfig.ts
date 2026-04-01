@@ -8,6 +8,8 @@ export interface SEOConfig {
   twitterDescription: string;
 }
 
+const DOMAIN = 'https://amazonfbacursusnederland.online';
+
 export const seoConfigs: Record<string, SEOConfig> = {
   '/': {
     title: 'Amazon FBA Cursus Nederland | Adspension',
@@ -46,5 +48,7 @@ export const seoConfigs: Record<string, SEOConfig> = {
     twitterDescription: 'Voorwaarden voor de Adspension cursus.'
   }
 };
+
+export const SITE_DOMAIN = DOMAIN;
 
 export const getDefaultSEO = (): SEOConfig => seoConfigs['/'];
