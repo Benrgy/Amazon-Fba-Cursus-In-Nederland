@@ -6,17 +6,17 @@ export default function WhatYouWillLearn() {
       icon: Search,
       title: "Product Research & Inkopen",
       items: [
-        "Leer hoe je winstgevende producten vindt met de beste software tools",
-        "Ontdek de geheimen van succesvolle product selectie",
-        "Maak contact met betrouwbare leveranciers in China",
-        "Onderhandel als een pro en krijg de beste prijzen"
+        "Winstgevende producten vinden met bewezen software tools",
+        "Succesvolle product selectie strategieën voor de Europese markt",
+        "Betrouwbare leveranciers vinden en onderhandelen in China",
+        "Margeberekening en winstgevendheid analyseren"
       ]
     },
     {
       icon: Settings,
-      title: "Account Opzetten & Managen",
+      title: "Amazon Account & FBA Setup",
       items: [
-        "Stap-voor-stap Amazon Seller Central setup",
+        "Amazon Seller Central account opzetten vanuit Nederland",
         "Brand Registry aanvragen voor merkbescherming",
         "FBA shipment planning en inventory management",
         "BOL.com account opzetten voor de Nederlandse markt"
@@ -24,22 +24,25 @@ export default function WhatYouWillLearn() {
     },
     {
       icon: TrendingUp,
-      title: "Listings & PPC Advertising",
+      title: "Listings, PPC & Schalen",
       items: [
-        "Converterende productlistings schrijven die verkopen",
+        "Converterende Amazon productlistings schrijven",
         "Amazon PPC campagnes opzetten voor maximale ROI",
-        "Keyword research en SEO optimalisatie",
-        "Geavanceerde advertising strategieën voor schaling"
+        "Keyword research en listing optimalisatie",
+        "Schaalstrategieën voor €10.000+ omzet per maand"
       ]
     }
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white" id="wat-leer-je" aria-label="Wat leer je in de Amazon FBA cursus">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-adspension-dark">
-          Wat je in deze Amazon cursus gaat leren:
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-adspension-dark">
+          Wat Leer Je in Deze Amazon FBA Cursus?
         </h2>
+        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Van product research tot schalen — alles wat je nodig hebt om succesvol te verkopen op Amazon vanuit Nederland
+        </p>
         
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
