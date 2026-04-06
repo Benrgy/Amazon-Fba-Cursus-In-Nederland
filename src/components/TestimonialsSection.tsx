@@ -1,4 +1,4 @@
-import { Star, ExternalLink } from "lucide-react";
+import { Star, ExternalLink, MessageSquare } from "lucide-react";
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
         </div>
         
         <div className="text-center mt-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-10">
             <div className="bg-white/10 rounded-lg p-4 text-center">
               <div className="text-2xl font-bold text-white">300+</div>
               <div className="text-white/80">Studenten in NL & BE</div>
@@ -80,6 +80,32 @@ export default function TestimonialsSection() {
               <div className="text-2xl font-bold text-white">1-op-1</div>
               <div className="text-white/80">Persoonlijke Begeleiding</div>
             </div>
+          </div>
+
+          {/* Trustpilot CTA */}
+          <div className="bg-white rounded-xl p-8 max-w-2xl mx-auto shadow-lg">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Star className="w-6 h-6 fill-[#00b67a] text-[#00b67a]" />
+              <span className="text-xl font-bold text-adspension-dark">Deel jouw ervaring</span>
+              <Star className="w-6 h-6 fill-[#00b67a] text-[#00b67a]" />
+            </div>
+            <p className="text-gray-600 mb-5">
+              Heb je de Amazon FBA cursus gevolgd? We horen graag over jouw ervaring. 
+              Laat een review achter op Trustpilot en help andere ondernemers bij hun keuze.
+            </p>
+            <a
+              href="https://www.trustpilot.com/review/amazonfbacursusnederland.online"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#00b67a] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#00a06a] transition-colors"
+            >
+              <MessageSquare className="w-5 h-5" />
+              Review achterlaten op Trustpilot
+              <ExternalLink className="w-4 h-4" />
+            </a>
+            <p className="text-xs text-gray-400 mt-3">
+              Trustpilot is een onafhankelijk reviewplatform
+            </p>
           </div>
         </div>
       </div>
