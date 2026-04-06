@@ -1,4 +1,4 @@
-import { Star, ExternalLink } from "lucide-react";
+import { Star, ExternalLink, MessageSquare } from "lucide-react";
 
 export default function TestimonialsSection() {
   const testimonials = [
