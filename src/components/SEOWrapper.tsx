@@ -83,29 +83,7 @@ export const SEOWrapper = ({ children }: { children: React.ReactNode }) => {
       "ratingCount": "312",
       "reviewCount": "287"
     },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Jan D." },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Dankzij Tijn's cursus en persoonlijke begeleiding maakte ik €5.000 omzet in mijn tweede maand.",
-        "datePublished": "2024-09-15"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Lisa M." },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Binnen 8 maanden ging ik van nul naar €12.000 winst per maand. Tijn's begeleiding was onmisbaar.",
-        "datePublished": "2024-11-20"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Marco V." },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Na het volgen van de cursus verdien ik €3.200 per maand passief met Amazon FBA.",
-        "datePublished": "2025-01-10"
-      }
-    ],
+    "review": [],
     "audience": {
       "@type": "Audience",
       "audienceType": "Beginners en ondernemers",
