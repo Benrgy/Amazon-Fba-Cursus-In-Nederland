@@ -1,4 +1,4 @@
-import tijnImg from "@/assets/tijn-strikker.webp";
+import { User } from "lucide-react";
 
 export default function FounderBio() {
   return (
@@ -9,15 +9,10 @@ export default function FounderBio() {
         </h2>
         
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
-          <div className="order-2 md:order-1">
-            <img 
-              src={tijnImg} 
-              alt="Tijn Strikker - Amazon FBA coach en oprichter van Adspension in Nederland"
-              className="w-full max-w-md mx-auto rounded-lg shadow-lg"
-              loading="lazy"
-              decoding="async"
-              itemProp="image"
-            />
+          <div className="order-2 md:order-1 flex justify-center">
+            <div className="w-48 h-48 rounded-full bg-adspension-green/10 border-4 border-adspension-green/30 flex items-center justify-center">
+              <User className="w-24 h-24 text-adspension-green/60" />
+            </div>
           </div>
           
           <div className="order-1 md:order-2 space-y-4">

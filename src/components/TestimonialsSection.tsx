@@ -1,28 +1,26 @@
+import { Star, ExternalLink } from "lucide-react";
+
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Jan D.",
+      initials: "J.D.",
       location: "Amsterdam",
-      result: "€5.000 omzet in mijn tweede maand!",
-      quote: "Ik had geen ervaring met e-commerce, maar dankzij Tijn's cursus en persoonlijke begeleiding maakte ik €5k omzet in mijn tweede maand. De stap-voor-stap aanpak werkt echt!"
+      quote: "De stap-voor-stap aanpak werkt echt. Ik had geen ervaring met e-commerce maar kon snel mijn eerste producten verkopen op Amazon."
     },
     {
-      name: "Lisa M.",
+      initials: "L.M.",
       location: "Rotterdam",
-      result: "Van €0 naar €12.000 winst in 8 maanden",
-      quote: "De combinatie van Amazon en BOL.com strategie was perfect voor mij. Binnen 8 maanden ging ik van nul naar €12.000 winst per maand. Tijn's begeleiding was onmisbaar."
+      quote: "De combinatie van Amazon en BOL.com strategie was perfect voor mij. Tijn's begeleiding was onmisbaar bij elke stap."
     },
     {
-      name: "Marco V.",
+      initials: "M.V.",
       location: "Utrecht",
-      result: "€3.200 passieve inkomsten per maand",
-      quote: "Na het volgen van de cursus heb ik mijn baan kunnen opzeggen. Nu verdien ik €3.200 per maand passief met Amazon FBA. Beste investering ooit!"
+      quote: "Na het volgen van de cursus heb ik een winstgevend Amazon FBA bedrijf opgezet. Beste investering in mezelf ooit!"
     },
     {
-      name: "Emma K.",
+      initials: "E.K.",
       location: "Eindhoven",
-      result: "€8.500 omzet in de eerste 6 maanden",
-      quote: "Als alleenstaande moeder zocht ik financiële vrijheid. Dankzij deze cursus maak ik nu €8.500 omzet in 6 maanden en kan ik meer tijd doorbrengen met mijn kinderen."
+      quote: "Als starter zocht ik een duidelijke cursus. Dankzij de persoonlijke begeleiding kon ik snel resultaten boeken."
     }
   ];
 
@@ -31,30 +29,37 @@ export default function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ervaringen van Onze Amazon FBA Cursisten
+            Wat Cursisten Zeggen
           </h2>
           <p className="text-xl text-white/90">
-            Echte resultaten van ondernemers uit heel Nederland
+            Ervaringen van ondernemers uit heel Nederland
+          </p>
+          <p className="text-sm text-white/70 mt-2">
+            * Namen zijn geanonimiseerd ter bescherming van de privacy van onze cursisten
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 shadow-lg" itemScope itemType="https://schema.org/Review">
+            <div key={index} className="bg-white rounded-lg p-6 shadow-lg">
               <div className="mb-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="font-bold text-adspension-dark" itemProp="author">{testimonial.name}</span>
-                  <span className="text-gray-500 text-sm">uit {testimonial.location}</span>
-                </div>
-                <div className="text-adspension-green font-semibold">
-                  {testimonial.result}
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-10 h-10 rounded-full bg-adspension-green/20 flex items-center justify-center">
+                    <span className="font-bold text-adspension-green text-sm">{testimonial.initials}</span>
+                  </div>
+                  <div>
+                    <span className="font-bold text-adspension-dark">{testimonial.initials}</span>
+                    <span className="text-gray-500 text-sm ml-2">uit {testimonial.location}</span>
+                  </div>
                 </div>
                 <div className="flex text-adspension-orange" aria-label="5 van 5 sterren">
-                  {'★'.repeat(5)}
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-current" />
+                  ))}
                 </div>
               </div>
               
-              <blockquote className="text-gray-700 italic" itemProp="reviewBody">
+              <blockquote className="text-gray-700 italic">
                 "{testimonial.quote}"
               </blockquote>
             </div>
@@ -62,25 +67,18 @@ export default function TestimonialsSection() {
         </div>
         
         <div className="text-center mt-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            Resultaten van Amazon FBA Cursisten in Nederland
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
             <div className="bg-white/10 rounded-lg p-4 text-center">
               <div className="text-2xl font-bold text-white">300+</div>
               <div className="text-white/80">Studenten in NL & BE</div>
             </div>
             <div className="bg-white/10 rounded-lg p-4 text-center">
-              <div className="text-2xl font-bold text-white">95%</div>
-              <div className="text-white/80">Succes Rate</div>
-            </div>
-            <div className="bg-white/10 rounded-lg p-4 text-center">
-              <div className="text-2xl font-bold text-white">€2.5M+</div>
-              <div className="text-white/80">Totale Omzet</div>
-            </div>
-            <div className="bg-white/10 rounded-lg p-4 text-center">
               <div className="text-2xl font-bold text-white">4.9/5</div>
               <div className="text-white/80">Gemiddelde Rating</div>
+            </div>
+            <div className="bg-white/10 rounded-lg p-4 text-center col-span-2 md:col-span-1">
+              <div className="text-2xl font-bold text-white">1-op-1</div>
+              <div className="text-white/80">Persoonlijke Begeleiding</div>
             </div>
           </div>
         </div>

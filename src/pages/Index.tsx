@@ -31,7 +31,7 @@ const Index = () => {
       <FinalCTA />
       <Footer />
       <StickyBar />
-      <SocialProof />
+      
     </div>
   );
 };
