@@ -12,7 +12,7 @@ import FAQSection from "@/components/FAQSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import StickyBar from "@/components/StickyBar";
-import SocialProof from "@/components/SocialProof";
+
 
 const Index = () => {
   return (
